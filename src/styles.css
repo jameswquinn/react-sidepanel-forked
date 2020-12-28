@@ -1,0 +1,57 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  padding: 1em;
+}
+
+.content {
+  padding: 1em;
+}
+
+.content.active {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000000bf;
+  filter: blur(1px);
+  opacity: 0.8;
+}
+
+.sidepanel {
+  display: none;
+  padding: 4em 1em;
+}
+
+.sidepanel.active {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  width: 200px;
+  background-color: #fff;
+  box-shadow: 1px 1px 6px silver;
+  animation: slideRight 0.2s linear;
+}
+
+.toggleButton {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+}
+
+@keyframes slideRight {
+  0% {
+    left: -220px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
